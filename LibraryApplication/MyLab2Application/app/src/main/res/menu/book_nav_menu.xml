@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_add_book"
+        android:title="Add Books" />
+    <item
+        android:id="@+id/nav_remove_last"
+        android:title="Remove Last" />
+    <item
+        android:id="@+id/nav_remove_all"
+        android:title="Remove All Books"/>
+    <item
+        android:id="@+id/nav_title_upper"
+        android:title="Uppercase Title"/>
+    <item
+        android:id="@+id/nav_title_switch"
+        android:title="Switch Activity"/>
+
+</menu>
