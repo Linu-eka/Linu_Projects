@@ -1,0 +1,71 @@
+---
+title: "Country Data Processing"
+author: "FIT2101-21-S2-Team02"
+date: "06/09/2021"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(plotly)
+library(htmlwidgets)
+```
+
+## Read CSV
+
+```{r reading-data}
+country_data <- read_csv("tokyo2020-country-data.csv")
+```
+
+## Multiple regression model
+
+```{r multiple-linear-regression}
+fit <- lm(previousRank ~ goldMedals + silverMedals + bronzeMedals + gdpPerCapita + avgBMI, data = country_data)
+```
+
+## Making predictions
+
+```{r predictions}
+country_data <- country_data %>% 
+  mutate(regression = predict(fit, country_data)) %>%
+  arrange(regression) %>%
+  mutate(predictedRank = 1:nrow(country_data))
+```
+
+## Write CSV
+
+```{r write-csv}
+country_data %>% 
+  select(c(previousRank, predictedRank, country, goldMedals, silverMedals, bronzeMedals, totalMedals)) %>%
+  write.csv("olympic-predictions.csv", row.names = FALSE)
+```
+
+## Creating HTML widget
+```{r create-html-widget}
+fig <- country_data %>%
+  filter(previousRank %in% c(1:5)) %>%
+  plot_ly()
+
+fig <- fig %>% add_trace(x = ~country, y = ~bronzeMedals, type = 'bar',
+             marker = list(color = 'rgb(205, 127, 50)',
+                           line = list(color = 'rgb(205, 127, 50)', width = 1.5)), name = "Bronze")
+fig <- fig %>% add_trace(x = ~country, y = ~silverMedals, type = 'bar',
+            marker = list(color = 'rgb(192,192,192)',
+                          line = list(color = 'rgb(192,192,192)', width = 1.5)), name = "Silver")
+
+fig <- fig %>% add_trace(x = ~country, y = ~goldMedals, type = 'bar',
+            marker = list(color = '	
+rgb(255,215,0)',
+                          line = list(color = '	
+rgb(255,215,0)', width = 1.5)), name = "Gold")
+
+fig <- fig %>% layout(title = "Cross-country Medal Comparison for Tokyo 2020 Olympics",
+         barmode = 'group',
+         xaxis = list(title = "", tickangle = -45),
+         yaxis = list(title = ""))
+
+fig
+
+#htmlwidgets::saveWidget(fig, "example_widget.testhtml", selfcontained = F, libdir = "lib")
+```

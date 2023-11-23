@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Graph</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css"/>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="styles/graphPage.css">
+	</head>
+	<body>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Graph</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Graph</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="CountryTable.html">Country Table</a>
+          <a class="mdl-navigation__link" href="PlayerTable.html">Player Table</a>
+          <a class="mdl-navigation__link" href="Graph.html">Graph</a>
+        </nav>
+      </div>
+
+      <div class="mdl-grid" style="margin-top:50px;" align="center">
+        <div class="mdl-cell mdl-cell--12-col">
+          <div>
+            <!--Make sure the form has the autocomplete function switched off:-->
+            <form autocomplete="off">
+              <div class="autocomplete" style="width:300px;">
+                <input id="myInput" type="text" name="myCountry" placeholder="Country">
+              </div>
+            </form>
+            <!-- Accent-colored raised button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="country" onClick="addCountry()">
+              Add Country
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="country" onClick="decreaseZoom()">
+              <i class="material-icons">zoom_out</i>
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="country" onClick="increaseZoom()">
+              <i class="material-icons">zoom_in</i>
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick="resetGraph()">
+              Reset Graph
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick="resetZoom()">
+              Reset Zoom
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-grid" style="margin-top:50px;" align="center">
+        <div class="mdl-cell mdl-cell--12-col">
+          <div id="graph"></div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/CountryData.js"></script>
+    <script src="scripts/Graph.js"></script>
+	 </body>
+   </html>

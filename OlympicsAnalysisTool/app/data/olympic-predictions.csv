@@ -1,0 +1,94 @@
+"previousRank","predictedRank","country","goldMedals","silverMedals","bronzeMedals","totalMedals"
+1,1,"United States of America",39,41,33,113
+2,2,"People's Republic of China",38,32,18,88
+3,3,"Japan",27,14,17,58
+6,4,"Australia",17,7,22,46
+4,5,"Great Britain",22,21,22,65
+5,6,"ROC",20,28,23,71
+10,7,"Italy",10,10,20,40
+9,8,"Germany",10,11,16,37
+7,9,"Netherlands",10,12,14,36
+11,10,"Canada",7,6,11,24
+8,11,"France",10,12,11,33
+16,12,"Republic of Korea",6,4,10,20
+12,13,"Brazil",7,6,8,21
+13,14,"New Zealand",7,6,7,20
+14,15,"Cuba",7,3,5,15
+15,16,"Hungary",6,7,7,20
+21,17,"Jamaica",4,1,4,9
+35,18,"Turkey",2,2,9,13
+44,19,"Ukraine",1,6,12,19
+28,20,"Serbia",3,1,5,9
+83,21,"Kazakhstan",0,0,8,8
+18,22,"Czech Republic",4,4,3,11
+29,23,"Belgium",3,1,3,7
+17,24,"Poland",4,5,5,14
+20,25,"Norway",4,2,2,8
+53,26,"Austria",1,1,5,7
+24,27,"Switzerland",3,4,6,13
+22,28,"Spain",3,8,6,17
+34,29,"Chinese Taipei",2,4,6,12
+32,30,"Uzbekistan",3,0,2,5
+19,31,"Kenya",4,4,2,10
+27,32,"Islamic Republic of Iran",3,2,2,7
+30,33,"Bulgaria",3,1,2,6
+39,34,"Israel",2,0,2,4
+25,35,"Denmark",3,4,4,11
+55,36,"Indonesia",1,1,3,5
+54,37,"Egypt",1,1,4,6
+41,38,"Qatar",2,0,1,3
+48,39,"India",1,2,4,7
+39,40,"Ireland",2,0,2,4
+36,41,"Uganda",2,1,1,4
+26,42,"Croatia",3,3,2,8
+31,43,"Slovenia",3,1,1,5
+59,44,"Estonia",1,0,1,2
+84,45,"Mexico",0,0,4,4
+63,46,"Bermuda",1,0,0,1
+59,47,"Fiji",1,0,1,2
+49,48,"Hong Kong, China",1,2,3,6
+59,49,"Thailand",1,0,1,2
+85,50,"Finland",0,0,2,2
+23,51,"Sweden",3,6,0,9
+56,52,"Portugal",1,1,2,4
+36,53,"Greece",2,1,1,4
+86,54,"Grenada",0,0,1,1
+59,55,"Latvia",1,0,1,2
+42,56,"Bahamas",2,0,0,2
+86,57,"Syrian Arab Republic",0,0,1,1
+71,58,"Mongolia",0,1,3,4
+56,59,"Ethiopia",1,1,2,4
+42,60,"Kosovo",2,0,0,2
+45,61,"Belarus",1,3,3,7
+86,62,"Burkina Faso",0,0,1,1
+63,63,"Morocco",1,0,0,1
+33,64,"Georgia",2,5,1,8
+63,65,"Puerto Rico",1,0,0,1
+86,66,"Ghana",0,0,1,1
+86,67,"Botswana",0,0,1,1
+67,68,"Azerbaijan",0,3,4,7
+50,69,"Slovakia",1,2,1,4
+50,70,"Philippines",1,2,1,4
+77,71,"North Macedonia",0,1,0,1
+38,72,"Ecuador",2,1,0,3
+86,73,"Republic of Moldova",0,0,1,1
+77,74,"Namibia",0,1,0,1
+46,75,"Romania",1,3,0,4
+72,76,"San Marino",0,1,2,3
+72,77,"Argentina",0,1,2,3
+86,78,"Kuwait",0,0,1,1
+52,79,"South Africa",1,2,0,3
+58,80,"Tunisia",1,1,0,2
+86,81,"Ivory Coast",0,0,1,1
+74,82,"Nigeria",0,1,1,2
+69,83,"Armenia",0,2,2,4
+70,84,"Kyrgyzstan",0,2,1,3
+74,85,"Jordan",0,1,1,2
+77,86,"Lithuania",0,1,0,1
+68,87,"Dominican Republic",0,3,2,5
+74,88,"Malaysia",0,1,1,2
+77,89,"Saudi Arabia",0,1,0,1
+46,90,"Venezuela",1,3,0,4
+77,91,"Turkmenistan",0,1,0,1
+77,92,"Bahrain",0,1,0,1
+66,93,"Colombia",0,4,1,5
